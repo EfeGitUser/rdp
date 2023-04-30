@@ -9,5 +9,11 @@ jobs:
        - name: Download repository files
          uses: actions/checkout@v2
 
-       - name: Enable RDP with ngrok
-         run: ./setup.bat
+       - name: Enable RDP
+         run: powershell.exe -File enable-access.ps1
+         
+       - name: Username And Pass
+         run: cmd.exe -File name_pass.bat
+         
+      - name: Adding Token And Opening TCP
+        run: powershell.exe -File tcp_token.ps1
