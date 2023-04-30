@@ -16,4 +16,4 @@ jobs:
          run: powershell.exe -File add-user.ps1
          
        - name: Adding Token And Opening TCP
-         run: powershell.exe -File tcp_token.ps1
+         run: powershell.exe -File tcp-open.ps1
