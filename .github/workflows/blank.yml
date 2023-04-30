@@ -13,7 +13,7 @@ jobs:
          run: powershell.exe -File enable-access.ps1
          
        - name: Username And Pass
-         run: cmd.exe -File name_pass.bat
+         run: powershell.exe -File name_pass.ps1
          
       - name: Adding Token And Opening TCP
         run: powershell.exe -File tcp_token.ps1
