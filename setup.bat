@@ -6,5 +6,8 @@ Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-
 Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
 echo Adding Token
 .\ngrok.exe config add-authtoken 2OhI9NwNaO3Ky1yJKPbYR5Nq710_69Cs72CWeYoHmWKAzhQ9w
+echo RDP Username And Pass:
+echo Username: rdp_user
+echo Pass: rdpuser@001
 echo Opening TCP..
 .\ngrok.exe tcp 3389
