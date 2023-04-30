@@ -12,8 +12,5 @@ jobs:
        - name: Enable RDP
          run: powershell.exe -File enable-access.ps1
        
-       - name: Adding User..
-         run: powershell.exe -File add-user.ps1
-         
        - name: Adding Token And Opening TCP
          run: powershell.exe -File tcp-open.ps1
