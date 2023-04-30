@@ -1,4 +1,3 @@
-net user rdp_user rdpuser@001 /add
-net localgroup administrators rdp_user /add
-echo Username: rdp_user
-echo Password: rdpuser@001
+net.exe user $env:UserName "Password@001"
+write-host Username: $env:UserName
+write-host Password: Password@001
