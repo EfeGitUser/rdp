@@ -8,9 +8,6 @@ jobs:
     steps:
        - name: Download repository files
          uses: actions/checkout@v2
-       - name: RDP Name And Pass
-         run: |
-              echo Username: rdp_user
-              echo Pass: rdpuser@001
+
        - name: Enable RDP with ngrok
-       - run: ./setup.bat
+         run: ./setup.bat
